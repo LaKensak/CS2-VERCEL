@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
 
-const API_KEY = process.env.AGENT_API_KEY || 'CHANGE_THIS_TO_A_SECRET_KEY';
+const API_KEY = process.env.API_KEY || 'CHANGE_THIS_TO_A_SECRET_KEY';
 
 export async function POST(req: Request) {
     try {
