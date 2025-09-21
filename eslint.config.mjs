@@ -20,6 +20,14 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+
+  ...nextPlugin.configs.recommended,
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off", // 🚫 désactive l'erreur sur any
+      "@typescript-eslint/no-unused-vars": ["warn"], // ⚠ juste un warning si une variable est inutilisée
+    },
+  }
 ];
 
 export default eslintConfig;
